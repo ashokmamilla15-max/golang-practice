@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func LargestElement(arr []int) int,error {
+func LargestElement(arr []int) (int, error) {
 	if len(arr) == 0 {
 		return 0, fmt.Errorf("array is empty")
 	}
@@ -12,7 +12,7 @@ func LargestElement(arr []int) int,error {
 			largest = value
 		}
 	}
-	return largest
+	return largest, nil
 }
 
 func main() {
