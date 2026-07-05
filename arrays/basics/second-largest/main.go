@@ -34,5 +34,5 @@ func main() {
 		fmt.Println("Error:", err)
 		return
 	}
-	println("The second largest element is:", secondLargest)
+	fmt.Println("The second largest element is:", secondLargest)
 }
